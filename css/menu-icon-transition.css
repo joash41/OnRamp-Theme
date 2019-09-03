@@ -1,0 +1,95 @@
+.menu_icon {
+  font-size:10px;
+  width: 3em;
+  height: 3em;
+  position: relative;
+  z-index: 0;
+  margin: 100% auto;
+}
+.menu_icon .bit-1::before {
+  content: '';
+  left: 0.5em;
+  top: 0.5em;
+  position: absolute;
+  width: 1em;
+  transform-origin: left bottom;
+  height: 0.3em;
+  background: #ffffff;
+  transition: transform 0.2s, top 0.2s;
+}
+.menu_icon .bit-1::after {
+  content: '';
+  position: absolute;
+  right: 0.5em;
+  top: 0.5em;
+  width: 1em;
+  transform-origin: right bottom;
+  height: 0.3em;
+  background: #ffffff;
+  transition: transform 0.2s, top 0.2s;
+}
+.menu_icon .bit-2 {
+  position: absolute;
+  width: 2em;
+  top: 50%;
+  left: 50%;
+  height: 0.3em;
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s 0.2s, width 0.2s 0.2s;
+}
+.menu_icon .bit-3::before {
+  content: '';
+  position: absolute;
+  bottom: 0.5em;
+  left: 0.5em;
+  width: 1em;
+  transform-origin: left top;
+  height: 0.3em;
+  background: #ffffff;
+  transition: transform 0.2s, bottom 0.2s;
+}
+.menu_icon .bit-3::after {
+  content: '';
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  width: 1em;
+  transform-origin: right top;
+  height: 0.3em;
+  background: #ffffff;
+  transition: transform 0.2s, bottom 0.2s;
+}
+.menu_icon.open .bit-1:before {
+  top: 0.4em;
+  width: 1.2em;
+  transform: rotate(45deg);
+  transform-origin: left bottom;
+  transition: transform 0.2s 0.2s, width 0.2s 0.2s, top 0.2s 0.2s;
+}
+.menu_icon.open .bit-1:after {
+  top: 0.4em;
+  width: 1.2em;
+  transform: rotate(-45deg);
+  transform-origin: right bottom;
+  transition: transform 0.2s 0.2s, width 0.2s 0.2s, top 0.2s 0.2s;
+}
+.menu_icon.open .bit-2 {
+  width: 0.3em;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s 0.2s, width 0.2s;
+}
+.menu_icon.open .bit-3:before {
+  bottom: 0.4em;
+  width: 1.2em;
+  transform: rotate(-45deg);
+  transform-origin: left top;
+  transition: transform 0.2s 0.2s, width 0.2s 0.2s, bottom 0.2s 0.2s;
+}
+.menu_icon.open .bit-3:after {
+  bottom: 0.4em;
+  width: 1.2em;
+  transform: rotate(45deg);
+  transform-origin: right top;
+  transition: transform 0.2s 0.2s, width 0.2s 0.2s, bottom 0.2s 0.2s;
+}

@@ -1,0 +1,58 @@
+#footer
+    color: $white
+    background: #7d7d7d
+    padding: 50px 0px
+    .container
+        display: flex
+        justify-content: space-between
+        @media (max-width: 800px)
+            text-align: center
+            display: block
+        .foot-i
+            font-size: 2em
+            margin-bottom: 30px
+            color: $white
+            &:hover
+                color: $color3
+        li.menu-item
+            list-style: none
+            padding-right: 20px
+            padding-bottom: 12px
+            @media (max-width: 800px)
+                float: none
+                padding: 0 0 10px 0
+            a
+                border-bottom: 2px solid transparent
+                transition: all 0.2s
+                padding-bottom: 3px
+                color: $white
+                &:hover
+                    padding-bottom: 3px
+                    border-bottom: 2px solid $color2
+                    transition: all 0.3s
+                    // @media (max-width: 800px)
+                        // border-bottom: none
+            &.menu-item-has-children
+                ul
+                    display: none
+            &.current_page_item
+                margin-bottom: 6px
+                a
+                    border-bottom: 2px solid $color2
+                    padding-bottom: 6px
+                    color: $white
+        .fwidget.two
+            padding-top: 50px
+            @media (min-width: 800px)
+                padding-top: 0px
+                width: 40%
+            .widgettitle
+                color: $white
+    .copyright
+        padding-top: 30px
+        a
+            color: $white
+            &:hover
+                color: $color3
+        &.container
+            display: block

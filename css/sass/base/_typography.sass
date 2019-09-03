@@ -1,0 +1,73 @@
+$font-primary : 'Montserrat', sans-serif
+$font-size: 16px
+
+body
+    font-family: $font-primary
+    font-size: $font-size
+    line-height: normal
+a
+    text-decoration: none
+    color: $color1
+    +transition(0.2s)
+    &:hover
+        +transition(0.2s)
+        color: $color3
+    &.btnOnramp, &.wp-block-button__link
+        display: inline-block
+        margin-top: 0px
+        background: $color1
+        color: $white
+        border-color: $color1
+        padding: 9px 14px
+        cursor: pointer
+        border-radius: 5px
+        +transition(0.2s)
+        &:hover
+            +transition(0.2s)
+            background: $color3
+            border-color: $color3
+strong, b
+    font-weight: 700
+
+// Headings
+h1
+    font-size: 2.488rem
+h2
+    font-size: 2.074rem
+h3
+    font-size: 1.728rem
+    &.widgettitle
+        padding-right: 30px
+        box-sizing: border-box
+        position: relative
+        i
+            line-height: 1.5em
+            right: 0px
+            top: 0px
+            position: absolute
+            display: none
+h4
+    font-size: 1.44em
+h5
+    font-size: 1.2em
+h6
+    font-size: 1em
+h1, h2, h3, h4, h5, h6
+    font-weight: 700
+    line-height: normal
+    color: $color1
+    margin-bottom: 1rem
+    font-family: $font-primary
+p
+    line-height: 150%
+    font-size: 1rem
+    margin-bottom: 1rem
+    &#breadcrumbs
+        margin-top: 1rem
+//Text Alignments
+.textCenter
+    text-align: center
+.textLeft
+    text-align: left
+.textRight
+    text-align: right

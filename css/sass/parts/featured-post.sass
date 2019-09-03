@@ -1,0 +1,51 @@
+.featuredPostSec
+    background-attachment: fixed
+    padding: 164px 0px
+    margin: 117px 0px
+    @media (max-width: 800px)
+        padding: 100px 0px 0px 0px
+        margin: 40px 0px 
+    .container
+        display: flex
+        align-items: center
+        @media (max-width: 800px)
+            display: block
+        h2.postTitle
+            color: white
+        .postContent
+            padding: 0 69px
+            color: white
+            margin-bottom: 20px
+            @media (max-width: 800px)
+            padding: 0px 5px
+        .onrampBtn
+            color: white
+            background: $color3
+            padding: 5px 47px
+            border-radius: 30px
+            &:hover
+                background: #bd5442
+        .postsWrapper
+                background-image: url(../images/news-bg.svg)
+                background-repeat: no-repeat
+                background-position: center
+                background-size: 0%
+                padding: 185px 40px
+                position: relative
+                text-align: center
+                width: 50%
+                transition: all 0.4s ease-in-out
+                margin-bottom: -288px
+                margin-top: -278px
+                @media (max-width: 800px)
+                    width: 100%
+                    background: none
+                    padding: 0px 0px 100px
+                    margin: 0
+                    box-sizing: border-box
+                &.active
+                    z-index: 9999
+                    background-size: 100%
+                    background-repeat: no-repeat
+                    background-position: center
+        

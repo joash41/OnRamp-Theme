@@ -1,0 +1,41 @@
+.systemAccSec
+    margin-top: 50px
+    padding: 50px
+    @media (max-width: $mob-menu-max-width)
+        padding: 50px 0
+    .container
+        display: flex
+        align-items: center
+        @media (max-width: 768px)
+            flex-direction: column !important
+        .imgWrapper
+            width: 50%
+            @media (max-width: 768px)
+                width: 100%
+        .contentOutsideWrapper
+            width: 50%
+            @media (max-width: 768px)
+                width: 100%
+            .contentInsideWrapper
+                .accordionTitle
+                    cursor: pointer
+                    border-top: 1px solid $black
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    padding: 15px 0px
+                    h4
+                        margin: 0
+                &:last-child
+                    border-bottom: 1px solid $black
+            .contentWrapper
+                overflow: hidden
+    &:nth-child(even)
+        background: #eeeeee
+    &:nth-child(odd)
+        .container
+            flex-direction: row-reverse
+            @media (max-width: 768px)
+                flex-direction: column
+            .imgWrapper
+                text-align: right
